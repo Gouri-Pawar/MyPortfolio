@@ -70,15 +70,15 @@ nav a:hover{color:var(--amber);}
   flex:0 0 auto;width:230px;height:230px;border-radius:6px;
   overflow:hidden;border:1px solid rgba(255,255,255,.18);
   box-shadow:6px 6px 0 var(--teal);
-  opacity:0;animation:riseIn .7s ease .25s forwards;
+  opacity:0;animation:riseIn .3s ease .1s forwards;
 }
 #hero .photo img{width:100%;height:100%;object-fit:cover;display:block;}
-#hero .inner .text > *{opacity:0;animation:riseIn .6s ease forwards;}
-#hero .eyebrow{animation-delay:.05s;}
-#hero h1{animation-delay:.15s;}
-#hero p.lede{animation-delay:.28s;}
-#hero .hero-tags{animation-delay:.4s;}
-#hero .btn-row{animation-delay:.5s;}
+#hero .inner .text > *{opacity:0;animation:riseIn .25s ease forwards;}
+#hero .eyebrow{animation-delay:.02s;}
+#hero h1{animation-delay:.06s;}
+#hero p.lede{animation-delay:.1s;}
+#hero .hero-tags{animation-delay:.14s;}
+#hero .btn-row{animation-delay:.18s;}
 @keyframes riseIn{
   from{opacity:0;transform:translateY(16px);}
   to{opacity:1;transform:translateY(0);}
@@ -105,7 +105,7 @@ nav a:hover{color:var(--amber);}
 .btn.ghost:hover{border-color:#fff;}
 
 /* scroll reveal */
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease, transform .6s ease;}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .25s ease, transform .25s ease;}
 .reveal.in{opacity:1;transform:translateY(0);}
 
 /* sections */
