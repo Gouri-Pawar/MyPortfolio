@@ -1,120 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Gouri Pawar — Software Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="animate__animated animate__fadeInDown animate__slower">
-    <div class="container">
-      <h1>Gouri Pawar</h1>
-      <nav>
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <section id="hero">
-    <div class="container hero-content animate__animated animate__fadeInUp animate__slower">
-    <img src="profile_pic.jpg" alt="Gouri Pawar" style="border-radius: 5%;"/><br><br>
-      <div class="hero-text">
-        <h2>Hi, I'm a Sotware Developer</h2>
-        <p><center>I build Android apps and responsive websites.</center></p>
+<header>
+  <div class="wrap bar">
+    <div class="mark">Gouri Pawar<span>.</span></div>
+    <button id="menu-btn" aria-label="Toggle menu">☰</button>
+    <nav id="nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="hero">
+  <div class="wrap inner">
+    <div class="text">
+      <div class="eyebrow">// software developer, backend-focused</div>
+      <h1>I build systems that hold up under real use — and apps people actually understand.</h1>
+      <p class="lede">Computer Science student working across Go backend development and Android applications, with a habit of shipping things end to end: API, database, and interface.</p>
+      <div class="hero-tags">
+        <span class="tag light">Go / Golang</span>
+        <span class="tag light">PostgreSQL</span>
+        <span class="tag light">Android · Java</span>
+        <span class="tag light">System Design</span>
+      </div>
+      <div class="btn-row">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn ghost" href="#contact">Get in Touch</a>
       </div>
     </div>
-  </section>
+    <div class="photo"><img src="profile_pic.jpg" alt="Gouri Pawar"></div>
+  </div>
+</section>
 
-  <section id="about" class="container section animate__animated animate__fadeInLeft animate__slower">
-    <h2>About Me</h2>
-    <p>I'm a Computer Science student and backend-focused developer with hands-on experience building scalable applications across Android, web, and server-side systems. My core stack includes Go (Golang) for backend development — using tools like Gin, GORM, and JWT for building REST APIs and authentication — alongside PostgreSQL for database design, and Java, HTML, CSS, and JavaScript for application and web development. I enjoy solving real-world problems through code, from building distributed backend systems to designing full-stack web applications, and I'm continuously strengthening my skills in data structures, algorithms, and system design. My goal is to contribute to impactful engineering teams, build reliable and efficient software, and grow as a software engineer.</p>
-  </section>
-
-  <section id="skills" class="container section animate__animated animate__fadeInRight animate__slower">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>Java</li>
-      <li>Golang</li>
-      <li>PostgreSQL</li>
-      <li>REST APIs</li>
-      <li>Redis</li>
-      <li>Docker</li>
-      <li>XML</li>
-      <li>Android Development</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Firebase</li>
-      <li>Git & GitHub</li>
-    </ul>
-  </section>
-
-  <section id="projects" class="container section">
-  <h2 class="animate__animated animate__zoomIn">Projects</h2>
-  <div class="project animate__animated animate__fadeInUp animate__slower">
-    <div class="project">
-      <h3>Quiz App</h3>
-      <p>A feature-rich Android quiz application developed using Java and XML, integrated with Firebase for real-time database operations and user authentication. The app includes admin and student modules, quiz creation, dynamic question loading, result tracking, and detailed answer reviews. Designed with clean UI and modular code structure for scalability.
-      <br>🔗<a href="https://github.com/Gouri-Pawar/SWAG_APP"> GitHub Repository</a><br><br></p>
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="num">01</span>
+      <h2>About</h2>
     </div>
+    <p>I'm a Computer Science student and backend-focused developer with hands-on experience building scalable applications across Android, web, and server-side systems. My core stack includes Go for backend development — using tools like Gin-style routing, GORM, and JWT for REST APIs and authentication — alongside PostgreSQL for database design, and Java, HTML, CSS, and JavaScript for application and web development. I enjoy solving real-world problems through code, from distributed backend systems to full-stack web applications, and I'm continuously strengthening my skills in data structures, algorithms, and system design. My goal is to contribute to impactful engineering teams and grow as a software engineer.</p>
+  </div>
+</section>
 
-    <div class="project">
-      <h3>Drishya-vani: Location-Based Voice Narration Mobile App</h3>
-      <p>DrishyaVani is a voice-first Android app that narrates real-time location, history, and cultural context to help tourists and visually impaired users navigate unfamiliar places. It combines live location tracking, Text-to-Speech narration, multi-language support, and an emergency safety module — built with Java, Firebase, and the Wikipedia, Unsplash, and OpenStreetMap APIs.</p>
-        <a href="https://github.com/Gouri-Pawar/Drishya_Vani">Github Repository</a><br><br></p>
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="num">02</span>
+      <h2>Skills</h2>
     </div>
-
-    <div class="project">
-      <h3>Kidzee App</h3>
-      <p>Kidzee is an engaging educational Android application designed to help young children learn alphabets, numbers, and basic concepts in a fun and interactive way. Built using Java and XML, the app features animated visuals and pronunciation support to make learning more effective and enjoyable for kids. It emphasizes simplicity, interactivity, and a child-friendly design to ensure a smooth learning experience.</p>
-      <a href="https://github.com/Gouri-Pawar/Kidzee_App">Github Repository</a><br><br></p>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h4>Backend</h4>
+        <ul>
+          <li>Go / Golang</li><li>REST APIs</li><li>PostgreSQL</li><li>Redis</li><li>JWT Auth</li><li>Docker</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Android &amp; Web</h4>
+        <ul>
+          <li>Java</li><li>XML</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Firebase</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Tools</h4>
+        <ul>
+          <li>Git &amp; GitHub</li><li>Postman</li><li>VS Code</li><li>DSA</li>
+        </ul>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="project">
-      <h3>TaskFlow </h3>
-      <p>TaskFlow — Full-Stack Task Management Web App (Go)
-TaskFlow is a focused, single-user task tracker built to bridge the gap between overly simple to-do lists and heavyweight project-management tools. It supports secure JWT-based authentication with instant logout revocation via a Redis-backed token blacklist, full task CRUD with priority levels and optional due dates, and Redis caching for faster reads. A standout feature is its daily completion streak system — a habit-forming feedback loop that tracks consistency, not just pending tasks — shown alongside a 14-day activity view. The app ships as a clean, framework-free dashboard styled like a wall of sticky notes, with filtering, search, and a CORS-enabled REST API. Built with Go, GORM, PostgreSQL, and Redis on the backend, and vanilla HTML/CSS/JS on the frontend.</p>
-      <a href="https://github.com/Gouri-Pawar/TaskFlow">Github Repository</a><br><br></p>
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="num">03</span>
+      <h2>Projects</h2>
     </div>
+    <div class="projects">
 
-  </section>
+      <div class="project">
+        <div class="idx">01</div>
+        <div>
+          <h3>TaskFlow — Task Management Web App</h3>
+          <p>A focused, single-user task tracker with JWT authentication, priority levels, due dates, and daily completion streaks. Includes Redis-backed caching, instant logout via token blacklist, and a sticky-note-styled dashboard with filtering and search.</p>
+          <div class="stack"><span>Go</span><span>GORM</span><span>PostgreSQL</span><span>Redis</span><span>JS</span></div>
+          <a class="repo" href="https://github.com/Gouri-Pawar/TaskFlow" target="_blank">GitHub Repository ↗</a>
+        </div>
+      </div>
 
-  <section id="services" class="container section">
-    <h2>Services</h2>
-    <ul>
-      <li>Android App Development</li>
-      <li>Website Development (Static & Responsive)</li>
-      <li>Bug Fixing and App Maintenance</li>
-      <li>Firebase Integration</li>
-      <li>Backend Development with Go (Golang)</li>
-      <li>Database Design and Management (PostgreSQL, Redis)</li>
-      <li>API Development and Integration</li>
-      <li>Code Review and Optimization</li>
-    </ul>
-  </section>
+      <div class="project">
+        <div class="idx">02</div>
+        <div>
+          <h3>DrishyaVani — Voice Narration Mobile App</h3>
+          <p>A voice-first Android app that narrates real-time location, history, and cultural context to help tourists and visually impaired users navigate unfamiliar places. Combines live location tracking, Text-to-Speech, multi-language support, and an emergency safety module.</p>
+          <div class="stack"><span>Java</span><span>Firebase</span><span>Wikipedia API</span><span>OpenStreetMap</span></div>
+          <a class="repo" href="https://github.com/Gouri-Pawar/Drishya_Vani" target="_blank">GitHub Repository ↗</a>
+        </div>
+      </div>
 
-  <section id="contact" class="container section">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:gauripawar332@gmail.com">gauripawar332@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/gouri-pawar-a55537271" target="_blank">linkedin.com/in/gouri-pawar-a55537271</a></p>
-    <p>GitHub: <a href="https://github.com/Gouri-Pawar" target="_blank">github.com/Gouri-Pawar</a></p>
-    <p>Leetcode: <a href="https://leetcode.com/u/aSIg7nLQDH/" target="_blank">leetcode.com/u/Gouri-Pawar/</a></p>
-  </section>
+      <div class="project">
+        <div class="idx">03</div>
+        <div>
+          <h3>Quiz App</h3>
+          <p>A feature-rich Android quiz application with Firebase for real-time database operations and authentication, admin and student modules, dynamic question loading, result tracking, and detailed answer reviews.</p>
+          <div class="stack"><span>Java</span><span>XML</span><span>Firebase</span></div>
+          <a class="repo" href="https://github.com/Gouri-Pawar/SWAG_APP" target="_blank">GitHub Repository ↗</a>
+        </div>
+      </div>
 
-  <footer>
-    <p>&copy; 2025 Gouri Pawar. All rights reserved.</p>
-  </footer>
-  <script src="script.js"></script>
+      <div class="project">
+        <div class="idx">04</div>
+        <div>
+          <h3>Kidzee App</h3>
+          <p>An educational Android app that helps young children learn alphabets, numbers, and basic concepts through animated visuals and pronunciation support, built with a simple, child-friendly interface.</p>
+          <div class="stack"><span>Java</span><span>XML</span></div>
+          <a class="repo" href="https://github.com/Gouri-Pawar/Kidzee_App" target="_blank">GitHub Repository ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="num">04</span>
+      <h2>Services</h2>
+    </div>
+    <div class="services-grid">
+      <div>Android App Development</div>
+      <div>Backend Development with Go</div>
+      <div>Responsive Website Development</div>
+      <div>Database Design (PostgreSQL, Redis)</div>
+      <div>Firebase Integration</div>
+      <div>API Development &amp; Integration</div>
+      <div>Bug Fixing &amp; App Maintenance</div>
+      <div>Code Review &amp; Optimization</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="num">05</span>
+      <h2>Get in Touch</h2>
+    </div>
+    <div class="contact-grid">
+      <a href="mailto:gauripawar332@gmail.com">gauripawar332@gmail.com</a>
+      <a href="https://www.linkedin.com/in/gouri-pawar-a55537271" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Gouri-Pawar" target="_blank">GitHub</a>
+      <a href="https://leetcode.com/u/aSIg7nLQDH/" target="_blank">LeetCode</a>
+    </div>
+  </div>
+</section>
+
+<footer>&copy; 2026 Gouri Pawar. All rights reserved.</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
