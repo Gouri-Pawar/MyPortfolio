@@ -73,12 +73,12 @@ nav a:hover{color:var(--amber);}
   opacity:0;animation:riseIn .3s ease .1s forwards;
 }
 #hero .photo img{width:100%;height:100%;object-fit:cover;display:block;}
-#hero .inner .text > *{opacity:0;animation:riseIn .25s ease forwards;}
-#hero .eyebrow{animation-delay:.02s;}
-#hero h1{animation-delay:.06s;}
-#hero p.lede{animation-delay:.1s;}
-#hero .hero-tags{animation-delay:.14s;}
-#hero .btn-row{animation-delay:.18s;}
+#hero .inner .text > *{opacity:0;animation:riseIn .6s ease forwards;}
+#hero .eyebrow{animation-delay:.1s;}
+#hero h1{animation-delay:.3s;}
+#hero p.lede{animation-delay:.5s;}
+#hero .hero-tags{animation-delay:.7s;}
+#hero .btn-row{animation-delay:.9s;}
 @keyframes riseIn{
   from{opacity:0;transform:translateY(16px);}
   to{opacity:1;transform:translateY(0);}
